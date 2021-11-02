@@ -1,0 +1,206 @@
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('img/Untitled-1.jpg');
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cosmonavt_container{
+    display: flex;
+    padding-top: 55px;
+    justify-content: center;
+}
+.home_cosmonavt_logo{
+    margin-right: 150px;
+    width: 350px;
+    height: 350px;
+    background-image: url('img/X5NY.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateX(180deg);
+}
+.home_logo_text{
+    max-width: 560px;
+    height: 300px;
+    margin-top: 70px;
+}
+.home_logo_text .space_shuttle{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: violet;
+    font-weight: 550;
+}
+.home_logo_text h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0;
+    font-size: 60px;
+    color: rgb(218, 206, 206);
+    letter-spacing: 4px;
+}
+.home_logo_text .home_text{
+    color: rgb(170, 124, 192);
+    line-height: 20px;
+}
+.nav_container{
+    width: 100%;
+    padding: 0 100px 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.nav_container .nav_menu{
+    display: flex;
+    cursor: pointer;
+}
+.nav_menu span{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(140, 64, 140);
+    text-transform: uppercase;
+}
+.nav_text{
+    max-width: 350px;
+}
+.nav_menu h4{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+.nav_menu p{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    color: rgb(170, 124, 192);
+}
+.style_kub{
+    min-width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.feature1{
+    background-image: url('img/logo1.png');
+}
+.feature2{
+    background-image: url('img/logo2.png');
+}
+.feature3{
+    background-image: url('img/logo3.png');
+}
+.feature4{
+    background-image: url('img/logo4.png');
+}
+.feature5{
+    background-image: url('img/logo5.png');
+}
+.feature6{
+    background-image: url('img/logo6.png');
+}
+.anima{
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255,255,0.6);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    animation: animati 3s linear infinite;
+}
+.one{
+    right: 130px;
+    top: 120px;
+}
+.two{
+    right: 170px;
+    top: 307px;
+    animation: animati 1s linear infinite;
+}
+.three{
+    right: 314px;
+    top: 80px;
+    animation: animati 0.5s linear infinite;
+}
+.four{
+    width: 6px;
+    height: 6px;
+    right: 745px;
+    top: 353px;
+    animation: animati 0.9s linear infinite;
+}
+.five{
+    left: 41px;
+    top: 508px;}
+.six{
+    right: 400px;
+    top: 400px;
+}
+.seven{
+    right: 600px;
+    top: 550px;
+    animation: animati 1.5s linear infinite;
+}
+@keyframes animati{
+    0%{
+        box-shadow: 0 0 10px 5px rgba(255, 255,255,0.2);
+    }
+    50%{
+        box-shadow: 0 0 40px 15px rgba(255, 255,255,0.7);
+        background: rgb(255, 255, 255);
+    }
+    100%{box-shadow: 0 0 10px 5px rgba(255, 255,255,0.2);}
+}
+@media (max-width: 1049px){
+    .home_cosmonavt_logo{
+        width: 300px;
+        height: 250px;
+        background-size: 300px;
+    }
+    .home_logo_text{
+        max-width: 300px;
+        height:auto;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .home_logo_text h1{
+        font-size: 40px;
+    }
+    .nav_container{
+        width: 100%;
+        padding: 0 100px 60px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 800px){
+    .nav_container{
+        width: 100%;
+        padding: 0 100px 60px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .cosmonavt_container{
+        display: block;
+    }
+    .home_cosmonavt_logo{
+        width: 300px;
+        height: 260px;
+        background-position:center;
+        background-size: 300px;
+        margin: 0 auto;
+    }
+    .home_logo_text{
+        max-width: 300px;
+        height:auto;
+        font-size: 12px;
+        margin: 0px auto 50px;
+    }
+}
