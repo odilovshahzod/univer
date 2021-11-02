@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+body{
+    position: relative;
+    padding-top: 20px;
+    background: rgb(67, 5, 111);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    padding: 10px 130px;
+    background: rgb(62, 17, 92);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.5s ease;
+
+}
+header.sticky{
+    background: rgb(88, 16, 139);;
+    padding: 10px 130px;
+}
+.logo{
+    display: flex;
+    min-width: 90px;
+    justify-content: space-between;
+    align-items: center;
+    color: violet;
+   
+}
+.logo::before{
+    content: "";
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    background-image: url('img/logo_1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: #fff;
+    text-shadow: 1px 1px transparent;
+    padding-bottom: 3px;
+    border-bottom:2px solid transparent ;
+    transition: 0.5s ease;
+}
+.navbar a:hover{
+    color:#fff;
+    border-bottom:2px solid #fff;
+
+}
+
+@media (max-width: 1049px){
+    header{
+        padding: 12px 20px;
+        justify-content: space-between;
+}
+    header .navbar{
+        display: none;
+    }
+    header .navbar a{
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+        padding: 0 20px;
+        border-radius: 20px;
+        border-top : 2px solid transparent;
+        border-bottom : 2px solid transparent;
+    }
+    header .navbar.active{
+        z-index: 888;
+        position: fixed;
+        background: linear-gradient(45deg, rgb(165, 16, 202),rgb(231, 11, 206));
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px auto;
+        box-shadow: 0 5px 25px rgba(1,1,1,15%);
+        transition: 0.3s ease;
+    }
+    .navbar a:hover{
+        color: #000;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #ccc;
+    }
+    header.sticky{
+        padding: 10px 20px;
+    }
+    .menu-btn{
+        position: absolute;
+        background: url("img/hamburger.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.4s ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        border-radius: 10px;
+        background:url("img/x.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s ease;
+    }
+}
