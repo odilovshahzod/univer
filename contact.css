@@ -1,0 +1,131 @@
+#contact{
+    width: 100%;
+    min-height: 100vh;
+    background: red;
+    background-image: url('img/cos7.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+}
+.contact_container{
+    width: 70%;
+    min-height: 400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 6px solid rgb(128, 27, 168);
+    border-left: 6px solid rgba(75, 75, 75, 0.2);
+    border-right: 6px solid rgba(75, 75, 75,0.2);
+    padding: 0 80px 80px;
+    margin-bottom: 100px;
+    border-radius: 2px 2px 0 0;
+}
+#contact .style_contact{
+    width: 400px;
+    margin: 0 auto;
+    border-top:15px solid rgb(128, 27, 168);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+#contact h1{
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+#contact .narra{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid violet;
+    padding: 20px 0;
+}
+#contact .narra h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.narra-galery p{
+    color: rgb(170, 124, 192);
+    width: 400px;
+    line-height: 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.narra-foto{
+    width: 400px;
+    background-image: url('img/cos4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+footer{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.yulduz{
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    left: 0;
+    top: 20px;
+    border-radius: 50%;
+    background: linear-gradient(to top, rgb(67,5,111)70%,rgb(81,238,238));
+    animation: rotate 5s linear infinite;
+}
+.yulduz::before{
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 20px 20px 0 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgb(67, 5, 111);
+}
+.yulduz::after{
+    content: '';
+    position: absolute;
+    display: block;
+    top:330px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #51eeee;
+    box-shadow: 0 0 10px #51eeee,0 0 30px #51eeee,0 0 55px #51eeee,0 0 80px #51eeee;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.an1{
+    right: 400px;
+    top: 150px;
+}
+.an2{
+    left: 400px;
+    top: 150px;
+}
+.an3{
+    left: 207px;
+    bottom:20px;
+}
+.an4{
+    right: 40px;
+    bottom: 100px;
+}
+.an5{
+    right: 150px;
+    top: 20px;
+}
+.an6{
+    left:185px;
+    top: 80px;
+}
