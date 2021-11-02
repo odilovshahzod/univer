@@ -1,0 +1,265 @@
+#features{
+  position: relative;
+  padding-top: 60px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.container_img{
+   padding: 20px;
+   background: linear-gradient(45deg,rgba(255,255,255,0.08),rgba(255,255,255,0.2),rgba(255,255,255,0.08));
+}
+.cosmos_container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.img_block{
+    position: relative;
+    transition: transform 1s ease 1s;
+    overflow: hidden;
+
+}
+.button{
+    margin: 10px;
+    text-align: center;
+}
+.button .knopka{
+    padding: 15px 20px;
+    margin: 0 20px;
+    background: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#leftButton{
+    background-image: url('img/left.png');
+}
+#rightButton{
+    background-image: url('img/right.png');
+}
+.cosmo_img{
+    width: 400px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    transition: 1s ease;    
+}
+.look_our_gallery{
+    width: 500px;
+    height: auto;
+    color: rgb(170, 124, 192);
+}
+h2{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(204, 8, 171);
+}
+.look_our_gallery p{
+    margin: 25px 0;
+}
+.anim2{
+  position: absolute;
+  z-index: -1px;
+  width: 50px;
+  height: 50px;
+  background-image: url('img/anim.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center center;
+  animation: anims 15s ease infinite;
+}
+.anim3{
+    width: 70px;
+    height: 70px;
+    animation: anims 50s ease infinite;
+}
+.anim4{
+    width: 120px;
+    height: 120px;
+    animation: anims1 30s ease infinite;
+}
+.anim5{
+    width: 80px;
+    height: 80px;
+    animation: anims2 10s ease infinite;
+}
+@keyframes anims{
+    0%{
+        right: 10px;
+        top: 50px;
+        transform: rotate(0deg);
+    }
+    20%{
+         right: 200px;
+         top: 600px;
+         transform: rotate(360deg);
+        }
+    40%{
+         right: 800px;
+        top: 500px;
+        transform: rotate(0deg);
+    }
+    60%{
+         right: 1000px;
+        top: 500px;
+        transform: rotate(-360deg);
+    }
+     80%{
+        right: 660px;
+         top: 160px;
+        transform: rotate(0deg);
+    }
+    100%{
+        right: 20px;
+        top: 60px;
+        transform: rotate(360deg);
+    }
+}
+@keyframes anims1{
+    0%{
+        left: 10px;
+        bottom: 50px;
+        transform: rotate(0deg);
+    }
+    20%{
+         left: 200px;
+         bottom: 400px;
+         transform: rotate(-360deg);
+        }
+    40%{
+         left: 800px;
+         bottom: 450px;
+        transform: rotate(0deg);
+    }
+    60%{
+         left: 1000px;
+         bottom: 300px;
+        transform: rotate(360deg);
+    }
+     80%{
+        left: 660px;
+        bottom: 160px;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 20px;
+        bottom: 60px;
+        transform: rotate(-360deg);
+    }
+}
+@keyframes anims2{
+    0%{
+        left: 10px;
+        bottom: 80px;
+        transform: rotate(0deg);
+    }
+    20%{
+         left: 200px;
+         bottom: 400px;
+         transform: rotate(-360deg);
+        }
+    40%{
+         left: 1000px;
+         bottom: 500px;
+        transform: rotate(0deg);
+    }
+    60%{
+         left: 800px;
+         bottom: 350px;
+        transform: rotate(360deg);
+    }
+     80%{
+        left: 960px;
+        bottom: 260px;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 20px;
+        bottom: 100px;
+        transform: rotate(-360deg);
+    }
+}
+.anim6{
+    position: absolute;
+    right: -85px;
+    top: 200px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-15deg);
+    background-image: url('img/images.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.anim7{
+    position: absolute;
+    right: -90px;
+    top: 240px;
+    z-index: -10px;
+    width: 160px;
+    height: 130px;
+    transform: rotate(-20deg) skewX(30deg);
+    border: 1px solid rgb(170, 124, 192);
+}
+.anim8{
+    position: absolute;
+    left: -85px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(15deg);
+    background-image: url('img/images1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 1049px){
+    #features{
+        position: relative;
+        padding-top: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+    .cosmos_container{
+        display: block;
+        width: 100%;
+        padding: 30px;
+    }
+    .cosmo_img{
+        width: 380px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        transition: 1s ease;    
+    }
+    .container_img{
+        display: block;
+        margin: 10px auto;
+        padding: 10px 10px 0px;
+        width: 400px;
+        height: 330px;
+        background: linear-gradient(45deg,rgba(255,255,255,0.08),rgba(255,255,255,0.3),rgba(255,255,255,0.08));
+     }
+     .look_our_gallery{
+        width: 400px;
+        height: 300px;
+        padding: 10px;
+        font-size: 12px;
+        color: rgb(170, 124, 192);
+        margin: 20px auto;
+    }
+    .look_our_gallery p{
+        margin: 5px 0;
+    }
+    .button{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
