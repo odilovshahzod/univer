@@ -72,6 +72,7 @@ header.sticky{
 #home{
     position: relative;
     width: 100%;
+    height: 100vh;
     background-image: url('img/Untitled-1.jpg');
     background-attachment: fixed;
     background-position:center;
@@ -227,6 +228,7 @@ header.sticky{
 /* ----------------------- FEATURES ---------------------------------- */
 #features{
     position: relative;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -450,6 +452,7 @@ header.sticky{
 /* ----------------------- GALLERY ---------------------------------- */
 #gallery{
     position: relative;
+    height: 100vh;
     background-image: url('img/cos7.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -613,7 +616,7 @@ header.sticky{
 }
 /* -----------------------FOOTER---------------------------------- */
 footer{
-    min-height: 600px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-image: url('img/galaxy_foto.png');
@@ -909,16 +912,17 @@ footer{
     #features{
         padding: 100px 20px;
         display: block;
+        height: auto;
       }
       .container_img{
         position: relative;
-        margin-bottom: 40px;
         width: auto;
-        height: auto;
+        margin: 0 auto 40px;
         padding: 20px;
        }
        .cosmo_img img{
-        height: 190px;
+        width: auto;
+        height: auto;
     }
     .button{
         padding: 10px 0 0;
@@ -1042,6 +1046,7 @@ footer{
 /* ----------------------- GALLERY ---------------------------------- */
     #gallery{
         display: block;
+        height: auto;
         padding: 40px 20px;
     }
     .gallery_text{
@@ -1058,7 +1063,7 @@ footer{
     .cosmo_shlem{
         width: auto;
         height: auto;
-        padding: 20px 40px;
+        padding: 10% 15%;
         margin-top: 50px;
     }
     .galery_anim{
@@ -1148,9 +1153,10 @@ footer{
     width: auto;
     padding: 80px 20px;
 }
+/* -------------------------- FOOTER ------------ */
 footer{
-    padding: 330px 10px;
-    min-height: auto;
+    padding: 0;
+    height: 100vh;
 }
 .yulduz{
     border-left-width: 150px;

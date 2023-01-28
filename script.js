@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         navbar.classList.remove('open_navbar_menu');
         navbar_open_close_click.style.cssText=`transform: translateY(0);`
     })
+    container_img=document.querySelector('.container_img')
     const slides=document.querySelectorAll('.img'),
     slidesWrapper=document.querySelector('.cosmo_img'),
     slidesField=document.querySelector('.img_block'),
@@ -23,9 +24,14 @@ window.addEventListener('DOMContentLoaded',()=>{
     rightButton=document.querySelector('#rightButton'),
     width=getComputedStyle(slidesWrapper).width;
 
+
     let offset=0;
     slides.forEach(slide=>{
         slide.style.width=width 
+        if (window.innerWidth<=1200) {
+            container_img.style.width=`${window.innerWidth-60}px`
+            slide.style.width=`${window.innerWidth-99}px`
+        }
     })
     rightButton.addEventListener('click',()=>{
         if(offset==(+width.slice(0,width.length-2)*(slides.length-1))){
@@ -42,6 +48,8 @@ window.addEventListener('DOMContentLoaded',()=>{
     slidesWrapper.style.transform=`translateX(-${offset}px)`
 
 })
+// if(window.innerWidth)
+console.log(window.innerWidth);
 
 
 
